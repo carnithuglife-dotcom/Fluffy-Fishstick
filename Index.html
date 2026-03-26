@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Live Psychedelic Player</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<video id="video" autoplay muted style="display:none;"></video>
+<canvas id="canvas"></canvas>
+<div id="controls">
+  <input type="file" id="fileInput" accept="video/*">
+  <button id="cameraBtn">Camera</button>
+  <button id="randomBtn">Random Mode</button>
+  <button id="mushroomBtn">Mushroom Preset</button>
+  <select id="kaleidoMode">
+    <option value="4">4-Way</option>
+    <option value="6">6-Way</option>
+    <option value="radial">Radial</option>
+  </select>
+  <button id="fullscreenBtn">Fullscreen</button>
+</div>
+<script src="player.js"></script>
+</body>
+</html>
